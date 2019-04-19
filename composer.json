@@ -1,0 +1,31 @@
+{
+    "name": "{{vendor}}/{{package-name}}",
+    "description": "{{description}}",
+    "type": "package",
+    "homepage": "{{repo_url}}",
+    "keywords": ["laravel","{{package-name}}"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jeremy Bloomstrom",
+            "email": "jeremy.bloomstrom@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "laravel/framework": "~5.1",
+        "kitetail/zttp": "^0.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "{{Vendor}}\\{{PackageClass}}\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "{{Vendor}}\\{{PackageClass}}\\{{PackageClass}}ServiceProvider"
+            ]
+        }
+    }
+}
